@@ -1,5 +1,7 @@
 # m-template
 
+vue + typescript + vant + axios 移动端项目模板
+
 ## Project setup
 ```
 npm install

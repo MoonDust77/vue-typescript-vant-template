@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <div class="test">
+      <van-button type="primary">主要按钮</van-button>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import { Component, Vue } from "vue-property-decorator"; // @ is an alias to /src
+import { Button, Form } from "vant";
 
-export default Vue.extend({
+@Component({
   name: "Home",
   components: {
-    HelloWorld
+    [Button.name]: Button,
+    [Form.name]: Form
   }
-});
+})
+export default class Home extends Vue {}
 </script>
+<style lang="scss" scoped>
+.test {
+  height: 300px;
+  background: gray;
+}
+</style>
