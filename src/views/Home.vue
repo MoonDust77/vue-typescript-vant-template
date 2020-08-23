@@ -22,6 +22,5 @@ export default class Home extends Vue {}
 <style lang="scss" scoped>
 .test {
   height: 300px;
-  background: gray;
 }
 </style>
