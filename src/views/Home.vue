@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"; // @ is an alias to /src
-import { Button, Form } from "vant";
+import { Component, Vue } from 'vue-property-decorator' // @ is an alias to /src
+import { Button, Form } from 'vant'
 
 @Component({
-  name: "Home",
+  name: 'Home',
   components: {
     [Button.name]: Button,
     [Form.name]: Form
